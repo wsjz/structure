@@ -22,7 +22,7 @@ public class BinarySearch<E> {
         int lo = 0;
         int hi = elements.size() - 1;
         while (lo <= hi) {
-            int mid = lo + ((hi - lo) >>> 2);
+            int mid = lo + ((hi - lo) >>> 1);
             if (elements.get(mid).compareTo(element) < 0) {
                 lo = mid + 1;
             } else if (elements.get(mid).compareTo(element) > 0) {
